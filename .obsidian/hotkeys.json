@@ -1,0 +1,10 @@
+{
+  "templater-obsidian:Templates/operator_template.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
+  ]
+}
