@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/operator_template.md",
+                "file": "public/AST/Operators/Expression/Arithmetic/MINUS.md.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "operator_template"
+              "title": "MINUS.md"
             }
           }
         ],
@@ -203,9 +203,10 @@
   },
   "active": "5601cb1248b42d6a",
   "lastOpenFiles": [
-    "public/AST/Operators/Expression/Arithmetic/MINUS.md.md",
-    "Templates/operator_template.md",
     "public/AST/Operators/Expression/Arithmetic/PLUS.md.md",
+    "public/AST/Operators/Expression/Arithmetic/MINUS.md.md",
+    "public/index.md",
+    "Templates/operator_template.md",
     "public/AST/Operators/Expression/Arithmetic",
     "public/AST/Operators/Expression",
     "AST/Operators/Expression/Arithmetic/PLUS.md.md",
@@ -233,7 +234,6 @@
     "public/Images/Pasted image 20251220161759.png",
     "public/Images/Pasted image 20251220163240.png",
     "public/Images/Pasted image 20251220161315.png",
-    "public/index.md",
     "AST/Operators/Statement/COndition/IF.md.md",
     "AST/Operators/Statement/COndition/ELSE.md.md",
     "Tree store.md",

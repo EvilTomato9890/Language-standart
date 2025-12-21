@@ -77,7 +77,7 @@ created: 2025-12-21
   
 
 ## Связанные операторы
-
+%% DATAVIEW_PUBLISHER: start
 ```dataview
 
 TABLE
@@ -91,7 +91,12 @@ FROM ""
 WHERE file.path = this.file.path
 
 ```
+%%
 
+| File                                                                 | Ссылается на | Ссылаются на него |
+| -------------------------------------------------------------------- | ------------ | ----------------- |
+| [[public/AST/Operators/Expression/Arithmetic/MINUS.md.md\|MINUS.md]] | <ul></ul>    | <ul></ul>         |
 
+%% DATAVIEW_PUBLISHER: end %%
 >[!question] Что нужно обдумать
 > Как дальше жить

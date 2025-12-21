@@ -107,7 +107,7 @@ created: <% tp.date.now("YYYY-MM-DD") %>
   
 
 ## Связанные операторы
-
+%% DATAVIEW_PUBLISHER: start
 ```dataview
 
 TABLE
@@ -121,7 +121,13 @@ FROM ""
 WHERE file.path = this.file.path
 
 ```
+%%
 
+| File                                                  | Ссылается на                                                                                                                                                                                           | Ссылаются на него                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| [[Templates/operator_template.md\|operator_template]] | <ul><li>[[Templates/operator_template.md\|operator_template]]</li><li>[[Templates/operator_template.md\|operator_template]]</li><li>[[Templates/operator_template.md\|operator_template]]</li></ul> | <ul><li>[[Templates/operator_template.md\|operator_template]]</li></ul> |
+
+%% DATAVIEW_PUBLISHER: end %%
 
 >[!question] Что нужно обдумать
 > Как дальше жить
