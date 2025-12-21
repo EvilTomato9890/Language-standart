@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/AST/Operators/Expression/Arithmetic/MINUS.md.md",
+                "file": "public/AST/Каталог операторов.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "MINUS.md"
+              "title": "Каталог операторов"
             }
           }
         ],
@@ -203,8 +203,10 @@
   },
   "active": "5601cb1248b42d6a",
   "lastOpenFiles": [
-    "public/AST/Operators/Expression/Arithmetic/PLUS.md.md",
+    "Images/Pasted image 20251221043902.png",
+    "Images",
     "public/AST/Operators/Expression/Arithmetic/MINUS.md.md",
+    "public/AST/Operators/Expression/Arithmetic/PLUS.md.md",
     "public/index.md",
     "Templates/operator_template.md",
     "public/AST/Operators/Expression/Arithmetic",
@@ -228,7 +230,6 @@
     "public/AST/Обзор.md",
     "public/AST/Operators",
     "public/AST/FAQ.md",
-    "public/AST",
     "public/Images/Pasted image 20251220163326.png",
     "public/Images/Pasted image 20251220163359.png",
     "public/Images/Pasted image 20251220161759.png",
@@ -243,7 +244,6 @@
     "AST/Operators/PLUS.md.md",
     "AST/Operators/Arithmetic/MINUS.md.md",
     "AST/Формат хранения.md",
-    "AST/Operators/v.md.md",
     "Images/Pasted image 20251220163359.png",
     "Images/Pasted image 20251220163326.png",
     "Images/Pasted image 20251220163240.png",
