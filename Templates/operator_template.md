@@ -2,7 +2,6 @@
 const sanitize = (s) => (s ?? "").trim().replace(/[\\\/:*?"<>|]/g, "_");
 
 const raw_op = await tp.system.prompt("Имя оператора (например IF, PLUS, CALL)");
-if (raw_op === null) throw new Error("Canceled: raw_op");
 
 const op_class = await tp.system.suggester(
   ["Expression", "Statement"],
@@ -10,21 +9,12 @@ const op_class = await tp.system.suggester(
   true,
   "Класс оператора"
 );
-
-const op_group = await tp.system.suggester(
-  ["Arithmetic", "Bool", "Condition", "Cycle", "Functions", "Structure", "IO"],
-  ["Arithmetic", "Bool", "Condition", "Cycle", "Functions", "Structure", "IO"],
-  true,
-  "Группа оператора"
-);
-
 const short_desc = await tp.system.prompt("Коротко: что делает оператор (1 фраза)") ?? "";
-if (short_desc === null) throw new Error("Canceled: short_desc");
 
 const op = sanitize(raw_op || "OPERATOR");
 const folder = "public/AST/Operators";
-const targetDir  = `${folder}/${sanitize(op_class)}/${sanitize(op_group)}`;
-const targetPath = `${targetDir}/${op}.md`;
+const targetDir  = `${folder}/${sanitize(op_class)}`;
+const targetPath = `${targetDir}/${op}`;
 
 if (!(await app.vault.adapter.exists(targetDir))) {
   await app.vault.createFolder(targetDir);
@@ -38,7 +28,6 @@ type: ast_node
 node_kind: operator
 node_name: "<% op %>"
 operator_class: "<% op_class %>"
-operator_group: "<% op_group %>"
 short_info: "<% short_desc %>"
 storage_fmt: "<% op %>"
 version: 0.1.0
@@ -65,21 +54,20 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 > Еще какой-то код на ASM
 > ```
 
-### Свойства
-- *Какое-то свойство этого оператор, к примеру ассоциативность*
+### Свойства и особенности
+- *Какое-то свойство этого оператора важное для интерпретации дерева*
 
 ---
 
 ## Формат узла
 
 > [!info] Обозначения
-> **NC** (*no child*) — нулевой ребенок.
-> **...** — нет необходимости в данных.
+> **...** — нет ограничений.
 
-| child | имя | класс | группа| примечание |
-|:-----:|:---:|:-----:|:-----:|:--------:|
-| left  | ... | Какой-то класс | ... | ... |
-| right | Какая-то конкретная операция | ... | Какая-то группа | ...|
+| Ребенок | Имя | Класс |  Примечание |
+|:-----:|:---:|:-----:|:--------:|
+| left  | ... | Какой-то класс | ... |
+| right | Какая-то конкретная операция | ... | ...|
 
 **Иные требования к детям:**
 - *Какое-то требование к детям, к примеру существование*
@@ -88,23 +76,24 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 
 ### Примеры
 
-> Минимальный пример:
+> **Минимальныe примеры:**
 > ```
 > Какой-то простой код
 > ```
+> *Результат: 0*
 
 
-> Стандартный пример:
+> **Стандартныe примеры:**
 > ```
 > Какой-то нормальный код
 > ```
+> *Результат: 0*
 
-> Пограничный пример:
+> **Пограничныe примеры:**
 > ```
 > Какой-то страшный код
 > ```
-
-  
+> *Результат: 0*
 
 ## Связанные операторы
 %% DATAVIEW_PUBLISHER: start
@@ -122,12 +111,12 @@ WHERE file.path = this.file.path
 
 ```
 %%
-
-| File                                                  | Ссылается на                                                                                                                                                                                           | Ссылаются на него                                                        |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| [[Templates/operator_template.md\|operator_template]] | <ul><li>[[Templates/operator_template.md\|operator_template]]</li><li>[[Templates/operator_template.md\|operator_template]]</li><li>[[Templates/operator_template.md\|operator_template]]</li></ul> | <ul><li>[[Templates/operator_template.md\|operator_template]]</li></ul> |
-
 %% DATAVIEW_PUBLISHER: end %%
+
+---
+
+>[!node] Примечание
+>Какой-то текст
 
 >[!question] Что нужно обдумать
 > Как дальше жить

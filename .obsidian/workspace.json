@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "96a213c16fc8f56c",
+        "id": "3625fba2e9c9e472",
         "type": "tabs",
         "children": [
           {
-            "id": "05091cf46f38933b",
+            "id": "57596601dd7eceea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HOME PAGE.md",
+                "file": "public/AST/Expression/GT.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "HOME PAGE"
-            }
-          },
-          {
-            "id": "5601cb1248b42d6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "public/AST/Каталог операторов.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Каталог операторов"
+              "title": "GT"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Структура",
+                "query": "**...** — нет необходимости в данных.",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 798.5
   },
   "right": {
     "id": "9e4399f8d76af942",
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tree standart.md",
+                "file": "public/AST/Operators/Expression/Bool/LE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Tree standart"
+              "title": "Backlinks for LE"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tree standart.md",
+                "file": "public/AST/Operators/Expression/Bool/NE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Tree standart"
+              "title": "Outgoing links from NE"
             }
           },
           {
@@ -171,20 +156,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tree standart.md",
+                "file": "public/AST/Operators/Expression/Bool/NE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tree standart"
+              "title": "Outline of NE"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 371.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -201,53 +186,53 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "5601cb1248b42d6a",
+  "active": "57596601dd7eceea",
   "lastOpenFiles": [
-    "Images/Pasted image 20251221043902.png",
-    "Images",
-    "public/AST/Operators/Expression/Arithmetic/MINUS.md.md",
-    "public/AST/Operators/Expression/Arithmetic/PLUS.md.md",
-    "public/index.md",
+    "public/AST/Expression/GE.md",
+    "public/AST/Statement/FUNC_DECL.md",
+    "public/AST/Statement/FUNC.md",
+    "public/AST/Statement/FINISH.md",
+    "public/AST/Statement/BLOCK.md",
+    "public/AST/Statement/LIST.md",
+    "public/AST/Expression/AND.md",
+    "and1.md",
+    "public/AST/Expression/Boolean/Boolean.md",
+    "public/AST/Expression/ASSIGN.md",
+    "public/AST/Expression/Boolean",
+    "public/AST/Statement/RETURN.md",
+    "public/AST/Statement/PROC.md",
+    "public/AST/Statement/IF.md",
+    "public/AST/Expression/PLUS.md",
+    "RETURN.md",
+    "public/AST/Statement/CONTINUE.md",
+    "public/AST/Statement/BREAK.md",
+    "public/AST/Expression/DIV.md",
     "Templates/operator_template.md",
+    "public/AST/Statement/WHILE.md",
+    "public/AST/Expression/POW.md",
+    "public/AST/Expression/OR.md",
+    "public/AST/Expression/NE.md",
+    "public/AST/Expression/MUL.md",
+    "public/AST/Expression/MINUS.md",
+    "public/AST/Expression/LT.md",
+    "public/AST/Operators/Statement/Structure",
+    "public/AST/Operators/Expression/Memory",
+    "public/AST/Operators/Statement/Condition",
+    "public/AST/Statement",
+    "public/AST/Operators/Expression/Bool",
+    "public/Images/Pasted image 20251221043902.png",
+    "Images/Pasted image 20251221043902 1.png",
+    "Images",
     "public/AST/Operators/Expression/Arithmetic",
-    "public/AST/Operators/Expression",
-    "AST/Operators/Expression/Arithmetic/PLUS.md.md",
-    "HOME PAGE.md",
+    "public/AST/Expression",
     "AST/Operators/Expression/Arithmetic",
-    "AST/Operators/Expression",
-    "AST/Operators",
-    "AST",
-    "index.md",
-    "public/AST/Operators/Statement/COndition/IF.md.md",
-    "public/AST/Operators/Statement/COndition/ELSE.md.md",
-    "public/AST/Operators/Statement/COndition",
-    "public/AST/Operators/Statement",
-    "public/AST/Примеры деревьев.md",
-    "public/AST/Формат хранения.md",
-    "public/AST/Совместимость и версии.md",
-    "public/AST/Семантика и интерпретация.md",
-    "public/AST/Каталог операторов.md",
-    "public/AST/Обзор.md",
-    "public/AST/Operators",
-    "public/AST/FAQ.md",
     "public/Images/Pasted image 20251220163326.png",
     "public/Images/Pasted image 20251220163359.png",
     "public/Images/Pasted image 20251220161759.png",
     "public/Images/Pasted image 20251220163240.png",
     "public/Images/Pasted image 20251220161315.png",
-    "AST/Operators/Statement/COndition/IF.md.md",
-    "AST/Operators/Statement/COndition/ELSE.md.md",
-    "Tree store.md",
-    "AST/Operators/Statement/Functions/FUNC.md.md",
-    "AST/Operators/Expression/Bool/CONST_CHECK.md.md",
-    "AST/Operators/g/g/g.md.md",
-    "AST/Operators/PLUS.md.md",
-    "AST/Operators/Arithmetic/MINUS.md.md",
-    "AST/Формат хранения.md",
     "Images/Pasted image 20251220163359.png",
     "Images/Pasted image 20251220163326.png",
-    "Images/Pasted image 20251220163240.png",
-    "Images/Pasted image 20251220161759.png",
-    "Images/Pasted image 20251220161315.png"
+    "Images/Pasted image 20251220163240.png"
   ]
 }
